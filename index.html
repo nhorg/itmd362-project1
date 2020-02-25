@@ -8,7 +8,7 @@
 </head>
 <body>
   <h1>Help us improve!</h1>
-  <p>Provide your feedback below:</p>
+  <p>Provide your feedback below! Get 10 bonus points to use in Center Court!</p>
 
   <form method="get" action="null" id="submission">
   	<label for="name">Name</label>
@@ -19,24 +19,22 @@
 
   	<label for="student_year">Class Year</label>
   	<div class="student_year_div">
-  		<label for="student_year">Freshman</label>
-  		<input type="radio" name="student_year" value="freshman">
-  		<label for="student_year">Sophomore</label>
-  		<input type="radio" name="student_year" value="sophomore">
-  		<label for="student_year">Junior</label>
-  		<input type="radio" name="student_year" value="junior">
-  		<label for="student_year">Senior</label>
-  		<input type="radio" name="student_year" value="senior">
-  		<label for="student_year">Graduate</label>
-  		<input type="radio" name="student_year" value="graduate">
+  		<select id="student_year">
+  			<option value="freshman">Freshman</option>
+  			<option value="sophomore">Sophomore</option>
+  			<option value="junior">Junior</option>
+  			<option value="senior">Senior</option>
+  			<option value="graduate">Graduate</option>
+  		</select>
   	</div>
-
   	
   </form>
 
-  <label for ="comments">Comments</label>
+  <label for ="comments">What would you like to improve?</label>
   <textarea name="comments" form="submission">
   </textarea>
+
+  <div class="submit_btn"><input type="submit" value="Submit"></div>
 
 </body>
 </html>
