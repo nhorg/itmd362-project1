@@ -5,17 +5,18 @@
   <meta charset="UTF-8">
   <title>IIT Dining Hall Feedback</title>
   <link rel="stylesheet" media="screen" href="style/style.css"/>
+  <script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
   <h1>Help us improve!</h1>
   <p>Provide your feedback below! Get 10 bonus points to use in Center Court!</p>
 
-  <form method="get" action="null" id="submission">
+  <form name="submit" method="get" action="null" id="submission" onsubmit="return validateForm()">
   	<label for="name">Name</label>
-  	<input type="text" name="name_data" id="name">
+  	<input type="text" name="name_data" id="name_data">
 
   	<label for="email">Email</label>
-  	<input type="text" name="email_data" id="email">
+  	<input type="text" name="email_data" id="email_data">
 
   	<label for="student_year">Class Year</label>
   	<div class="student_year_div">
